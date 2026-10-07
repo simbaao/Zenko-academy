@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Zenko | Como melhorar o peitoral, com ciência</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Instrument+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  color-scheme:dark;
+  --bg:#10151b; --surface:#171e27; --line:#27323f;
+  --text:#e9eef4; --muted:#93a1b2; --accent:#6fd3c4;
+  --head:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;
+  --body:"Instrument Sans","Segoe UI",system-ui,sans-serif;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--text);font:400 1.0625rem/1.65 var(--body)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.wrap{max-width:68rem;margin:0 auto;padding:0 1.25rem}
+
+/* hero */
+.hero{display:grid;gap:2rem;align-items:center;padding:4rem 0 3.5rem}
+.hero h1{font:700 clamp(3.2rem,11vw,6.5rem)/.95 var(--head);letter-spacing:-.03em;margin:0 0 1.25rem}
+.hero p{max-width:30rem;color:var(--muted);font-size:1.2rem;margin:0 0 2rem}
+.btn{display:inline-block;background:var(--accent);color:#08201c;font:500 1rem var(--body);padding:.85rem 1.5rem;border-radius:.5rem;text-decoration:none;transition:filter .2s}
+.btn:hover{filter:brightness(1.1)}
+.fig svg{width:100%;height:auto;display:block}
+.fig figcaption{color:var(--muted);font-size:.9rem;margin-top:.5rem}
+.sw{display:inline-block;width:.7rem;height:.7rem;border-radius:50%;margin-right:.35rem;vertical-align:baseline}
+.fiber{fill:none;stroke-width:1.6;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1;animation:draw 1.6s ease-out .2s forwards}
+.fiber.c{stroke:var(--accent)} .fiber.s{stroke:#c9d4e0;opacity:.75;animation-delay:.7s}
+@keyframes draw{to{stroke-dashoffset:0}}
+
+/* sections */
+section.row{display:grid;gap:1rem;padding:3rem 0;border-top:1px solid var(--line)}
+h2{font:700 1.7rem/1.15 var(--head);letter-spacing:-.01em;margin:0}
+.row p{margin:0 0 1rem;max-width:40rem}
+.row p:last-child{margin-bottom:0}
+.muted{color:var(--muted)}
+dl{margin:0;max-width:40rem}
+dt{font-weight:500;margin-top:1.1rem}
+dt:first-child{margin-top:0}
+dd{margin:.15rem 0 0;color:var(--muted)}
+dt::before{content:"";display:inline-block;width:.5rem;height:.5rem;background:var(--accent);border-radius:50%;margin-right:.6rem}
+table{width:100%;max-width:40rem;border-collapse:collapse}
+.tw{overflow-x:auto}
+th,td{text-align:left;padding:.8rem .9rem .8rem 0;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-weight:500}
+td{color:var(--muted)}
+.note{background:var(--surface);border-left:3px solid var(--accent);padding:.9rem 1.1rem;border-radius:0 .5rem .5rem 0;max-width:40rem}
+footer{border-top:1px solid var(--line);padding:2rem 0 3rem;color:var(--muted);font-size:.95rem}
+footer strong{color:var(--text);font-family:var(--head)}
+
+@media (min-width:800px){
+  .hero{grid-template-columns:1.1fr .9fr;padding:6rem 0 5rem}
+  section.row{grid-template-columns:15rem 1fr;gap:3rem;padding:4rem 0}
+  h2{font-size:1.9rem}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .fiber{animation:none;stroke-dashoffset:0}
+}
+</style>
+</head>
+<body>
+<main class="wrap">
+
+<header class="hero">
+  <div>
+    <h1>Zenko</h1>
+    <p>Pare de treinar peitoral no escuro. Entenda como o músculo funciona e cresce, e treine com critério.</p>
+    <a class="btn" href="#anatomia">Ler o conteúdo</a>
+  </div>
+  <figure class="fig" style="margin:0">
+    <svg viewBox="0 0 400 260" role="img" aria-label="Esquema das fibras do peitoral maior, saindo da clavícula e do esterno em direção ao braço">
+      <g id="fibers"></g>
+      <path d="M192 72 L100 80 M200 70 L200 205" stroke="#3a4a5c" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <path d="M208 72 L300 80" stroke="#3a4a5c" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <circle cx="68" cy="132" r="5" fill="#e9eef4"/><circle cx="332" cy="132" r="5" fill="#e9eef4"/>
+    </svg>
+    <figcaption><span class="sw" style="background:var(--accent)"></span>Porção clavicular &nbsp; <span class="sw" style="background:#c9d4e0"></span>Porção esternocostal</figcaption>
+  </figure>
+</header>
+
+<section class="row" id="anatomia">
+  <h2>Anatomia do peitoral</h2>
+  <div>
+    <dl>
+      <dt>Peitoral maior, porção clavicular</dt>
+      <dd>Sai da clavícula e atua principalmente na flexão do ombro (levar o braço para cima e à frente). É a região conhecida como peitoral superior.</dd>
+      <dt>Peitoral maior, porção esternocostal</dt>
+      <dd>Sai do esterno e das costelas. É a maior parte do músculo e atua na adução horizontal do braço e na extensão do ombro, como no movimento de empurrar.</dd>
+      <dt>Peitoral menor</dt>
+      <dd>Fica sob o peitoral maior. Estabiliza a escápula e tem pouca relação com o volume visível do peito.</dd>
+    </dl>
+  </div>
+</section>
+
+<section class="row">
+  <h2>Como o músculo cresce</h2>
+  <div>
+    <p>A hipertrofia acontece quando o músculo recebe um estímulo que ele ainda não tolera bem e, durante a recuperação, se adapta aumentando de tamanho.</p>
+    <dl>
+      <dt>Tensão mecânica</dt>
+      <dd>É o principal fator. Séries próximas da falha com carga progressiva expõem as fibras a alta tensão.</dd>
+      <dt>Estresse metabólico</dt>
+      <dd>O acúmulo de subprodutos do esforço (a sensação de "queimação") pode contribuir, mas é secundário.</dd>
+      <dt>Dano muscular</dt>
+      <dd>Microlesões podem ajudar, mas dor no dia seguinte não é prova de treino eficiente.</dd>
+    </dl>
+  </div>
+</section>
+
+<section class="row">
+  <h2>Princípios de treino</h2>
+  <div>
+    <dl>
+      <dt>Volume semanal</dt>
+      <dd>Mais séries tendem a gerar mais crescimento, até um limite individual. Muitas diretrizes usam algo entre 10 e 20 séries por semana para o peitoral.</dd>
+      <dt>Frequência</dt>
+      <dd>Treinar o peitoral 2 vezes por semana costuma funcionar bem por distribuir o volume. Com volume igual, a diferença para outras frequências é pequena.</dd>
+      <dt>Proximidade da falha</dt>
+      <dd>Parar a 0 a 3 repetições da falha mantém o estímulo alto sem acumular fadiga excessiva.</dd>
+      <dt>Progressão de carga</dt>
+      <dd>Para continuar crescendo, é preciso aumentar aos poucos carga, repetições ou qualidade de execução.</dd>
+      <dt>Amplitude de movimento</dt>
+      <dd>Amplitude ampla, com boa fase de alongamento, gera estímulo eficiente. Meias repetições com carga exagerada não ajudam.</dd>
+    </dl>
+  </div>
+</section>
+
+<section class="row">
+  <h2>Seleção de exercícios</h2>
+  <div>
+    <p>O peitoral tem fibras em direções diferentes. Por isso, variar o ângulo ajuda a estimular o músculo de forma mais completa.</p>
+    <div class="tw">
+    <table>
+      <thead><tr><th>Exercício</th><th>Por que usar</th></tr></thead>
+      <tbody>
+        <tr><td>Supino inclinado</td><td>Dá mais ênfase à porção clavicular.</td></tr>
+        <tr><td>Supino reto</td><td>Boa base para a porção esternocostal, permite cargas altas.</td></tr>
+        <tr><td>Crucifixo ou voador</td><td>Mantém tensão com o músculo alongado, com menos participação do tríceps.</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p class="muted" style="margin-top:1rem">As diferenças entre ângulos existem, mas são modestas. Consistência e progressão importam mais.</p>
+  </div>
+</section>
+
+<section class="row">
+  <h2>Recuperação</h2>
+  <div>
+    <p>O músculo cresce fora da academia. Três pontos sustentam esse processo:</p>
+    <dl>
+      <dt>Descanso entre treinos</dt>
+      <dd>Dar tempo ao peitoral para se recuperar antes de treiná-lo de novo.</dd>
+      <dt>Sono</dt>
+      <dd>Dormir pouco prejudica a recuperação e o desempenho. Para adultos, o geral é de 7 a 9 horas.</dd>
+      <dt>Alimentação</dt>
+      <dd>Proteína suficiente (cerca de 1,6 a 2,2 g por kg de peso por dia é uma faixa comum) e energia adequada para sustentar o ganho.</dd>
+    </dl>
+  </div>
+</section>
+
+<section class="row">
+  <h2>Erros comuns</h2>
+  <div>
+    <dl>
+      <dt>Escápulas soltas no supino</dt>
+      <dd>Sem estabilidade nas escápulas, o ombro assume parte do trabalho e o peitoral recebe menos estímulo.</dd>
+      <dt>Carga demais, amplitude de menos</dt>
+      <dd>Reduz o alongamento do músculo, que é parte importante do estímulo.</dd>
+      <dt>Não progredir</dt>
+      <dd>Repetir sempre a mesma carga e as mesmas repetições deixa de gerar adaptação.</dd>
+      <dt>Usar só o supino reto</dt>
+      <dd>Deixa de lado a variação de ângulos e de posições de alongamento.</dd>
+      <dt>Treinar sempre longe da falha</dt>
+      <dd>Séries muito fáceis geram pouca tensão efetiva nas fibras.</dd>
+    </dl>
+    <p class="note" style="margin-top:1.5rem">Este conteúdo é educativo. Se você sente dor articular ou tem alguma lesão, procure um profissional de educação física ou de saúde.</p>
+  </div>
+</section>
+
+</main>
+<footer><div class="wrap"><strong>Zenko</strong> &nbsp; Treino de peitoral explicado pela ciência.</div></footer>
+
+<script>
+(function(){
+  var g=document.getElementById('fibers'),NS='http://www.w3.org/2000/svg';
+  function add(x1,y1,x2,y2,cls){
+    [false,true].forEach(function(m){
+      var p=document.createElementNS(NS,'path');
+      var a=m?400-x1:x1,b=m?400-x2:x2;
+      var cx=(a+b)/2,cy=Math.min(y1,y2)-14;
+      p.setAttribute('d','M'+a+' '+y1+' Q'+cx+' '+cy+' '+b+' '+y2);
+      p.setAttribute('class','fiber '+cls);
+      p.setAttribute('pathLength','1');
+      g.appendChild(p);
+    });
+  }
+  for(var i=0;i<7;i++) add(192-i*14,74+i*1.2,70,128+i*1.5,'c');
+  for(var j=0;j<8;j++) add(196,92+j*14,70,138+j*3,'s');
+})();
+</script>
+</body>
+</html>
